@@ -1,0 +1,9 @@
+
+Using @babel/node so that we can use JavaScript ES6:
+
+  https://hackernoon.com/using-babel-7-with-node-7e401bc28b04
+
+  npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/node
+
+
+  

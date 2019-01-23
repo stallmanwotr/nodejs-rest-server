@@ -1,0 +1,52 @@
+{
+    "name": "nodejs-rest-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/server/Server.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "config": {
+        "//": [
+            "Comment: This is the REST server configuration, port and context URL."
+        ],
+        "port": "4005",
+        "path": "/rest-server"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4",
+        "url": "^0.11.0",
+        "yargs": "^12.0.5"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.2.2",
+        "@babel/node": "^7.2.2",
+        "@babel/preset-env": "^7.3.1",
+        "nodemon": "^1.18.9"
+    },
+    "scripts": {
+        "//": [
+            "// Comment:",
+            "// Use nodemon to watch for file changes and auto restart the server",
+            "// Use babel-node so that we can use JavaScript ES6."
+        ],
+        "build": "babel src --out-dir dist",
+        "start-dev": "nodemon --exec babel-node src/server/Server.js",
+        "start-server": "node dist/Server.js",
+        "test": ""
+    },
+    "//": [
+        "// Comment:",
+        "// To install dependencies into node_modules:",
+        "// $ npm install",
+        "// ",
+        "// Then start the server on the configured port:",
+        "// $ npm run start-server",
+        "// ",
+        "// To pass the port (or override the other config) on the command line.",
+        "// The extra '--' is needed to separate arguments from those of npm:",
+        "// $ npm run start-server -- --port=8005"
+    ]
+}
